@@ -1,0 +1,115 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS (Estilo Minimalista)
+   ========================================================================== */
+:root {
+    --cor-principal: #b38f72;    /* Marrom Claro Moderno */
+    --cor-secundaria: #f4f4f4;   /* Cinza Claro para fundos de blocos */
+    --cor-fundo: #ffffff;        /* Fundo Limpo Branco */
+    --cor-texto: #1a1a1a;        /* Texto de Alto Contraste Preto */
+    --cor-botao: #7e7e7e;        /* Cinza Sólido Elegante para botões */
+    --cor-borda: #e0e0e0;        /* Linhas finas de divisão */
+    --transicao: all 0.3s ease;  /* Animações suaves padrões */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave nativa */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container de Restrição de Largura Limpa */
+.interface {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* ==========================================================================
+   ELEMENTOS REUTILIZÁVEIS
+   ========================================================================== */
+.secao-conteudo {
+    padding: 80px 0;
+}
+
+.bg-alternativo {
+    background-color: var(--cor-secundaria);
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+}
+
+.titulo-secao hr {
+    width: 50px;
+    border: none;
+    height: 2px;
+    background-color: var(--cor-principal);
+    margin: 15px auto 0;
+}
+
+.subtitulo {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* GRIDS RESPONSIVOS */
+.grid-2-colunas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.grid-3-colunas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ==========================================================================
+   CABEÇALHO E MENU
+   ========================================================================== */
+.header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items
